@@ -1,0 +1,47 @@
+<app-sidebar></app-sidebar>
+<app-footer></app-footer>
+<div class="container register-form" style="position: absolute; left: 0;">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+     <div class="form">
+         <div class="note">
+             <p style="font-style: italic; font-size: 4vh;">Ask a question</p>
+         </div>
+         <div class="form-content">
+             <div class="row">
+                 <div class="col-md-6">
+                     <div class="form-group">
+                         <input type="text" class="form-control" 
+                         placeholder="Your Name *" name="name1" value=""
+                         required
+                         ngModel />
+                     </div>
+                 </div>
+                 <div class="col-md-8">
+                    
+                         <input type="text" class="form-control"
+                          placeholder="Your question *" value="" name="text"
+                          required
+                          ngModel
+                          />
+               
+                 </div>
+             </div>
+             <br>
+             <button  [disabled]="!f.valid" type="submit" class="btn btn-warning" id="btnSubmit">Submit</button>
+         </div>
+     </div>
+     </form>
+     <br>
+<div >
+  <p class="elements" *ngIf="listQuas.length <1">No posts</p>
+    <ul class="list-group" *ngIf="listQuas.length >=1">
+        <li class="list-group-item" *ngFor="let post of listQuas">
+            <h3>{{ post.name}}</h3>
+            <p>{{post.question}}</p>
+            <p *ngIf="post.response">{{post.response}}</p>
+            <p *ngIf="post.rensponse">{{post.rensponse}}</p>
+        </li>
+    </ul>
+</div>
+<br><br> <br><br>
+ </div>

@@ -1,0 +1,17 @@
+.explo{
+    background-color: rgb(235, 210, 161);
+    color: rgb(15, 95, 100);
+    border-radius: 12px;
+    margin-top: 4px;
+}
+
+.explo img{
+    width: 20%;
+    position: relative;
+    left: 40%;
+    text-align: center;
+}
+
+.pHead{
+    font-size: 5vh;
+}

@@ -1,0 +1,40 @@
+<app-help2></app-help2>
+<div class="container register-form">
+ <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+   <a routerLink="/"><button type="button" class="btn btn-info">Back</button></a>
+    <div class="form">
+        <div class="note">
+            <p>Registration for free courses</p>
+        </div>
+
+        <div class="form-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="mail" 
+                        placeholder="E-mail address *" value=""
+                        required
+                        email
+                        ngModel
+                        #email = "ngModel"
+                        />
+                        <span class="help-block" *ngIf="!email.valid && email.touched" >Enter a valid mail!</span>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   
+                        <input type="password" class="form-control"
+                         placeholder="Your new  Password *" value="" name="pass"
+                         required
+                         ngModel
+                         />
+              
+                </div>
+            </div>
+            <button  [disabled]="!f.valid" type="submit" class="btn btn-warning" id="btnSubmit">Submit</button>
+        </div>
+    </div>
+    </form>
+</div>
+<app-footer></app-footer>

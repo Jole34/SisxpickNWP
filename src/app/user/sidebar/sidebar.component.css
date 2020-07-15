@@ -1,0 +1,49 @@
+
+.nav {
+    width: 75%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+  }
+
+  #spec{
+      width: 7vh;
+  }
+
+h3{
+    font-style: italic;
+    margin-left: 24vh;
+
+}
+  .nav a {
+    padding-top: 1vh;
+    border-bottom: 1px solid;
+    margin-left: 4vh;
+    text-decoration: none;
+    font-size: 3vh;
+    color: rgb(172, 115, 9);
+    display: inline;
+          font-style: italic;
+
+  }
+
+#lgo{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+  
+  .nav a:hover {
+    color: black;
+  }
+
+  @media screen and (max-width: 1230px) {
+    h3 {display: none;}
+    #lgo {bottom: 6%;}
+    #lgo {top: 90%;}
+    .nav {background-color: wheat;}
+    .nav{width: 100%;}
+    .nav a:hover {color: black;}
+  }

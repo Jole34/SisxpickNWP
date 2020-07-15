@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --bc :rgba(224, 172, 75, 0.719);
+    --br: 12px;
+    --h: 20%;
+    --w: 30%;
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+body {
+    background-image: url(src/assets/pictures/wall.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.firstCon{
+    position: absolute;
+    top: 35%;
+    left:15%;
+    background-color: var(--bc);
+    border-radius: var(--br);
+    height: var(--h);
+    width: var(--w);
+}
+
+.h:hover{
+    color: white;
+    background-color: rgb(172, 115, 9);
+    transition: 0.6s;
+    
+ 
+    
+}
+.secondCon{
+    position: absolute;
+    top: 55%;
+    right: 7%;
+    background-color: var(--bc);
+    border-radius: var(--br);
+    height: var(--h);
+    width: var(--w);
+    
+}
+
+.thirdCon{
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    background-color: var(--bc);
+    border-radius: var(--br);
+    height: var(--h);
+    width: var(--w);
+}
+
+.h{
+    color: rgb(18, 24, 27);
+    margin-top: 6vh;
+    font-style: italic;
+ 
+    text-align: center;
+    font-size: 4vh;
+    transition: 0.5s;
+}
+.logoDiv img {
+    width: 13vh;
+    border-radius: var(--br);
+    margin-left: 20px;
+}
+
+
+
+.logoDiv{
+  text-align: center;
+  background-color: rgb(253, 238, 190);
+}

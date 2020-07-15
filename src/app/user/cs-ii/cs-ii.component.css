@@ -1,0 +1,12 @@
+.courses{
+    margin-top: 4vh;
+    background-color: rgb(242, 248, 157);
+    text-align: center;
+    font-style: italic;
+}
+.less h3 {
+    margin-top: 12px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    text-align: center;
+}

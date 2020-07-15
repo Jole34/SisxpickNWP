@@ -1,0 +1,13 @@
+<div [class]="'logoDiv'">
+    <h3 [ngStyle]="{color: 'rgb(172, 115, 9)'}">
+      {{ 'Where words fail music speaks' }}<img id ="spec" src="/assets/pictures/logo6.png">
+    </h3>
+    <div class="nav">
+        <a routerLink="/userMain/courseI">I Course</a>
+        <a routerLink="/userMain/courseII">II Course</a>
+
+        <a routerLink="/userMain/qa">Q-A</a>
+      </div>
+      <button id ="lgo" type="button" (click)="logout()"class="btn btn-secondary btn-sm">Log-out</button>
+    </div>
+    
